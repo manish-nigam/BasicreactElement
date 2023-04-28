@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <title>Home1</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        const h1 = React.createElement('h1',{},"Topic Covered")
+        const p = React.createElement('p',{},'The following is list of all the topics we cover in the MDN learning area. ')
+        const a = React.createElement('a',{href : "https://www.w3schools.com/REACT/DEFAULT.ASP"},"Getting started with the web.")
+        const p2 = React.createElement('p',{className:'p'},"Provide a practical introduction to web devlopment for unique beginners.")
+        const a2 = React.createElement('a',{href : "https://www.w3schools.com/html/" },"HTML - Structuring the web.")
+        const p3 = React.createElement('p',{className : 'p'},"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore unde fugiat mollitia blanditiis laudantium perferendis a pariatur dicta eligendi facilis.")
+        const a3  = React.createElement('a',{href : "https://www.w3schools.com/css/"}, "CSS - Styling the web")
+        const p4  = React.createElement('p',{className : 'p'},"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore unde fugiat mollitia blanditiis laudantium perferendis a pariatur dicta eligendi facilis.")
+
+
+
+
+        let div  = React.createElement('div',{className: "mainDiv"},[h1,p,a,p2,a2,p3,a3,p4])
+        const root = ReactDOM.createRoot(document.getElementById("root"))
+    root.render(div)
+    </script>
+</body>
+</html>

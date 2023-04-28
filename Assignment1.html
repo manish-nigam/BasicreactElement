@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+     <title>Assignment1</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        const h1 = React.createElement('h1',{}, "Learn Web Devlopment")
+        const p = React.createElement('p',{},"Welcome to the MDN learing area. This set of articles aims to guide complete beginners to web devlopment with all that they need to start coding websites.")
+        const p1 = React.createElement('p1',{},"The aim of this area of MDN is not to take you from beginner to expert but to take you from beginner to comfortable from there you should be able to start making your way learning from the rest of MDN and other intermediate to advanced resources that assumes  a lot of previous knowledge")
+        const p2 = React.createElement('p2',{},"If you are a complete beginner web devlopment can be challenging --- we will hold your hand and provide enough detail for you to feel comfortable and learn the topics properly. You Should feel at home whether you are a student learning web devlopment (on your own or as part of a class) a teacher looking for class material, a hobbyist or someone who just wants to understand more about how web technologies work.")
+           
+
+        let div  = React.createElement('div',{className: "mainDiv"},[h1,p,p1,p2])
+        const root = ReactDOM.createRoot(document.getElementById("root"))
+    root.render(div)
+    
+    
+    
+    </script>
+</body>
+</html>
